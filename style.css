@@ -1,0 +1,555 @@
+div{
+    box-sizing: border-box;
+}
+ 
+
+#HEADER{
+    background-color: darkgray;
+    height: 150px;
+}
+
+#SIDEBAR1{
+    background-color: palegoldenrod;
+    height: 700px;
+    width: 15%;
+    float: left;
+}
+
+    .point_set_table{
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+        .table_top{
+            display: flex;
+            flex-direction: row;
+            height: 15%;
+
+        }
+            .sett{
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+                height: 100%;
+
+            }
+                .turn{
+                    background-color: white;
+                    width: 100%;
+                    height: 70%;
+                    font-size: 30;
+
+                }
+                .categories{
+                    background-color: #282828;
+                    width: 100%;
+                    height: 30%;
+                    color: white;
+                }
+            .player1point{
+                background-color: beige;
+                width: 30%;
+                height: 100%;
+                border: 1px solid black;
+        
+            }
+            .player2point{
+                background-color: white;
+                width: 30%;
+                height: 100% ;
+                border: 1px solid black;
+        
+            }
+        .table_low{
+            height: 5%;
+            border-color: black;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+        }
+            .aces{
+                width: 40%;
+                height: 100%;
+                border-color: black;
+                border: 1px solid black;
+            }
+            .p1aces{
+                width: 30%;
+                height: 100%;
+                border-color: black;
+                border: 1px solid black;
+                background-color: #f8d56f;
+            }
+            .p2aces{
+                width: 30%;
+                height: 100%;
+                border-color: black;
+                border: 1px solid black;
+            }
+            .deuces{
+                width: 40%;
+                height: 100%;
+                border-color: black;
+                border: 1px solid black;
+            }
+            .p1deuces{
+                width: 30%;
+                height: 100%;
+                border-color: black;
+                border: 1px solid black;
+                background-color: #f8d56f;
+            }
+            .p2deuces{
+                width: 30%;
+                height: 100%;
+                border-color: black;
+                border: 1px solid black;
+            }
+            .threes{
+                width: 40%;
+                height: 100%;
+                border-color: black;
+                border: 1px solid black;
+            }
+            .p1threes{
+                width: 30%;
+                height: 100%;
+                border-color: black;
+                border: 1px solid black;
+                background-color: #f8d56f;
+            }
+            .p2threes{
+                width: 30%;
+                height: 100%;
+                border-color: black;
+                border: 1px solid black;
+            }
+            .fours{
+                width: 40%;
+                height: 100%;
+                border-color: black;
+                border: 1px solid black;
+            }
+            .p1fours{
+                width: 30%;
+                height: 100%;
+                border-color: black;
+                border: 1px solid black;
+                background-color: #f8d56f;
+            }
+            .p2fours{
+                width: 30%;
+                height: 100%;
+                border-color: black;
+                border: 1px solid black;
+            }
+            .fives{
+                width: 40%;
+                height: 100%;
+                border-color: black;
+                border: 1px solid black;
+            }
+            .p1fives{
+                width: 30%;
+                height: 100%;
+                border-color: black;
+                border: 1px solid black;
+                background-color: #f8d56f;
+            }
+            .p2fives{
+                width: 30%;
+                height: 100%;
+                border-color: black;
+                border: 1px solid black;
+            }
+            .sixes{
+                width: 40%;
+                height: 100%;
+                border-color: black;
+                border: 1px solid black;
+            }
+            .p1sixes{
+                width: 30%;
+                height: 100%;
+                border-color: black;
+                border: 1px solid black;
+                background-color: #f8d56f;
+            }
+            .p2sixes{
+                width: 30%;
+                height: 100%;
+                border-color: black;
+                border: 1px solid black;
+            }
+        .table_middle{
+            height: 10%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+            .sub{
+                width: 100%;
+                height: 40%;
+                display: flex;
+                flex-direction: row;
+            }
+                .subtotal{
+                    width: 40%;
+                    height: 100%;
+                    border: 1px solid black;
+                    color: white;
+                    background-color: #282828;
+                }
+                .p1subtotal{
+                    width: 30%;
+                    height: 100%;
+                    border: 1px solid black;
+                    color: white;
+                    background-color: #848080;
+                }
+                .p2subtotal{
+                    width: 30%;
+                    height: 100%;
+                    border: 1px solid black;
+                    color: white;
+                    background-color: #848080;
+                }
+            .bbonus{
+                width: 100%;
+                height: 60%;
+                display: flex;
+                flex-direction: row;
+            }
+                .bonus{
+                    width: 40%;
+                    height: 100%;
+                    border: 1px solid black;
+                    color: white;
+                    background-color: #282828;
+                }
+                .p1bonus{
+                    width: 30%;
+                    height: 100%;
+                    border: 1px solid black;
+                    color: white;
+                    background-color: #848080;
+                }
+                .p2bonus{
+                    width: 30%;
+                    height: 100%;
+                    border: 1px solid black;
+                    color: white;
+                    background-color: #848080;
+                }
+
+                .choice{
+                    width: 40%;
+                    height: 100%;
+                    border-color: black;
+                    border: 1px solid black;
+                }
+                .p1choice{
+                    width: 30%;
+                    height: 100%;
+                    border-color: black;
+                    border: 1px solid black;
+                    background-color: #f8d56f;
+                }
+                .p2choice{
+                    width: 30%;
+                    height: 100%;
+                    border-color: black;
+                    border: 1px solid black;
+                }
+                .fofakind{
+                    width: 40%;
+                    height: 100%;
+                    border-color: black;
+                    border: 1px solid black;
+                }
+                .p1fofakind{
+                    width: 30%;
+                    height: 100%;
+                    border-color: black;
+                    border: 1px solid black;
+                    background-color: #f8d56f;
+                }
+                .p2fofakind{
+                    width: 30%;
+                    height: 100%;
+                    border-color: black;
+                    border: 1px solid black;
+                }
+                .fullhouse{
+                    width: 40%;
+                    height: 100%;
+                    border-color: black;
+                    border: 1px solid black;
+                }
+                .p1fullhouse{
+                    width: 30%;
+                    height: 100%;
+                    border-color: black;
+                    border: 1px solid black;
+                    background-color: #f8d56f;
+                }
+                .p2fullhouse{
+                    width: 30%;
+                    height: 100%;
+                    border-color: black;
+                    border: 1px solid black;
+                }
+                .sstraight{
+                    width: 40%;
+                    height: 100%;
+                    border-color: black;
+                    border: 1px solid black;
+                }
+                .p1sstraight{
+                    width: 30%;
+                    height: 100%;
+                    border-color: black;
+                    border: 1px solid black;
+                    background-color: #f8d56f;
+                }
+                .p2sstraight{
+                    width: 30%;
+                    height: 100%;
+                    border-color: black;
+                    border: 1px solid black;
+                }
+                .lstraight{
+                    width: 40%;
+                    height: 100%;
+                    border-color: black;
+                    border: 1px solid black;
+                }
+                .p1lstraight{
+                    width: 30%;
+                    height: 100%;
+                    border-color: black;
+                    border: 1px solid black;
+                    background-color: #f8d56f;
+                }
+                .p2lstraight{
+                    width: 30%;
+                    height: 100%;
+                    border-color: black;
+                    border: 1px solid black;
+                }
+                .yacht{
+                    width: 40%;
+                    height: 100%;
+                    border-color: black;
+                    border: 1px solid black;
+                }
+                .p1yacht{
+                    width: 30%;
+                    height: 100%;
+                    border-color: black;
+                    border: 1px solid black;
+                    background-color: #f8d56f;
+                }
+                .p2yacht{
+                    width: 30%;
+                    height: 100%;
+                    border-color: black;
+                    border: 1px solid black;
+                }
+            .table_bottom{
+                height: 10%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+                .total{
+                    width: 40%;
+                    height: 100%;
+                    border: 1px solid black;
+                    color: white;
+                    background-color: #282828;
+                }
+                .p1total{
+                    width: 30%;
+                    height: 100%;
+                    border: 1px solid black;
+                    color: white;
+                    background-color: #848080;
+                }
+                .p2total{
+                    width: 30%;
+                    height: 100%;
+                    border: 1px solid black;
+                    color: white;
+                    background-color: #848080;
+                }
+
+#PLAYGROUND{
+    background-color: antiquewhite;
+    height: 700px;
+    width: 70%;
+    float: left;
+    display: flex;
+    
+
+}
+
+#SIDEBAR2{
+    background-color: palegoldenrod;
+    height: 700px;
+    width: 15%;
+    float:left;
+
+}
+
+
+#FOOTER{
+    background: darkblue;
+    height: 100px;
+    width: 100%;
+    clear: both;
+    
+
+}
+
+.playbox{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+    .table{
+        height: 100%;
+        width: 70%;
+        float: left;
+        background-size: 100% 100%;
+        background-position: center;
+        display: table-cell;
+        text-align: center;
+        display: block;
+    }
+
+        .container{
+
+            display: flex;
+            width: 500px;
+            height: 350px;
+            line-height: 500px;
+            vertical-align: middle;
+            margin: auto;
+        }
+        .dice11{
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: auto;
+            background-color: darkred;
+        }
+
+        .dice22{
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin:auto;
+
+            background-color: darkred;
+        }
+
+        .dice33{
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: auto;
+
+            background-color: darkred;
+        }
+
+        .dice44{
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: auto;
+            background-color: darkred;
+        }
+
+        .dice55{
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: auto;
+            background-color: darkred;
+        }
+
+        .DiceBox{
+
+            display: flex;
+            width: 500px;
+            height: 150px;
+            line-height: 700px;
+            vertical-align: middle;
+            margin: auto;
+            
+
+        }
+            .dice1{
+                width: 100px;
+                height: 100px;
+                float: left;
+                margin: auto;
+                background-color: blueviolet;
+            }
+
+            .dice2{
+                width: 100px;
+                height: 100px;
+                float: left;
+                margin:auto;
+
+                background-color: blueviolet;
+            }
+
+            .dice3{
+                width: 100px;
+                height: 100px;
+                float: left;
+                margin: auto;
+
+                background-color: blueviolet;
+            }
+
+            .dice4{
+                width: 100px;
+                height: 100px;
+                float: left;
+                margin: auto;
+                background-color: blueviolet;
+            }
+
+            .dice5{
+                width: 100px;
+                height: 100px;
+                float: left;
+                margin: auto;
+                background-color: blueviolet;
+            }
+        
+        .RollButton{
+            width: 20%;
+            height: auto;
+            background-color: silver;
+            margin: auto;
+            font-size: 30px;
+            text-align: center;
+        }
+
+    .player2{
+        width: 15%;
+        height: 20%;
+        float: left;
+        padding: 250px 0;
+
+    }
