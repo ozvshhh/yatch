@@ -94,6 +94,7 @@ class를 선언하고 버튼 이름을 입력받으면
 let DiceTable = [1,1,1,1,1];
 let PointTable = [0,0,0,0,0];
 let CountTable = [0,0,0,0,0,0];
+let Turn = false;
 
 
 
@@ -155,6 +156,21 @@ let DICE = {
             console.log(`dice${dice_number_String}${dice_number_String} Point Table:`,PointTable);
         });
 
+    },
+    /** place에 족보를 입력하고, place_number에 족보에 맞는 숫자를 입력하면 점수표의 족보를 클릭했을 때 그 값을 계산해 점수표에 표시해주는 함수 
+     @param {string} place 족보이름 ex)p1aces 
+     @param {number} place_number 족보에 해당하는 숫자 aces는 1을 주면 됨 ex)1
+     */
+
+    BasicNumberCalculator: function(place,place_number){
+        $(`.${place}`).click(function(){
+            if(Turn === false){
+                let DIcePoint = CountTable[place_number-1] * place_number;
+                console.log(DIcePoint);
+                $(`.${place}`).text(`${DIcePoint}`);
+            }
+        })
+        
     }
 }
 
@@ -203,7 +219,20 @@ $('.admit').click(function(){
         CountTable.splice(i - 1,1,k);
         k = 0
     }
+    Turn = false;
     console.log(CountTable);
 });
 
 
+DICE.BasicNumberCalculator(`p1aces`,1);
+DICE.BasicNumberCalculator(`p2aces`,1);
+DICE.BasicNumberCalculator(`p1deuces`,2);
+DICE.BasicNumberCalculator(`p2deuces`,2);
+DICE.BasicNumberCalculator(`p1threes`,3);
+DICE.BasicNumberCalculator(`p2threes`,3);
+DICE.BasicNumberCalculator(`p1fours`,4);
+DICE.BasicNumberCalculator(`p2fours`,4);
+DICE.BasicNumberCalculator(`p1fives`,5);
+DICE.BasicNumberCalculator(`p2fives`,5);
+DICE.BasicNumberCalculator(`p1sixes`,6);
+DICE.BasicNumberCalculator(`p2sixes`,6);
